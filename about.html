@@ -1,76 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>About Us | Marstoned </title>
-    <meta charset="utf-8">
+<head>
+	<title>About Us | Marstoned </title>
+	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/master.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>	
 	<script src="js/bootstrap.min.js"></script>
-  </head>
-  <body>
-	   <header class="masthead">
-  <div class="overlay"></div>
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="images/mars.mp4"type="video/mp4">
-  </video>
-  <div class="container h-100">
-    <div class="d-flex h-100 text-center align-items-center">
-      <div class="mx-auto">
-        <h2 class=" text-white  ext-center display-3 serif">MarsStoned</h2>
-					<p class="text-white text-right ">You Order We Deliver</p>
-      </div>
-    </div>
-  </div>
-</header>
+	<script type="text/javascript">
+		$(window).on("load",function() {
+			$(window).scroll(function() {
+				var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+				$(".fade").each(function() {
+					/* Check the location of each desired element */
+					var objectBottom = $(this).offset().top + $(this).outerHeight();
 
-<div class="container pt-5 mx-auto">
+					/* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom > windowBottom) { //object comes into view (scrolling down)
+      	if ($(this).css("opacity")==1) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+      	if ($(this).css("opacity")==0) {$(this).fadeTo(500,0);}
+      }
+  });
+  }).scroll(); //invoke scroll-handler on page-load
+		});
+	</script>
+</head>
 
-			<div class="row w-100">
-				<div class="col-auto pt-2 m-3 mx-auto">
-					<h4 class=" text-center text-white lead">Most Popular
-					</h4>
-					<p class="text-white pt-1 text-center">Explore our most popular food.</p>
+
+
+<body>
+	<div class="">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top " id="navbarColor02">
+			<a class="navbar-brand font-weight-light" href="index.html">MarStoned</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ml-auto "><!-- Please apply class to ul from specific bootstrap page to like ml-auto to change horizontal allignment -->
+					<li class="nav-item active">
+						<a class="navbar-custom nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Menu</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">How We Work</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<header class="mastheadImg">
+			<div class="overlay"></div>
+			<div class="container h-100">
+				<div class="d-flex h-100 align-items-center">
+					<div class="mx-auto mb-4">
+						<h3 class=" text-white  text-center " id="title">About Us</h3>
+						<p class="text-white text-right gotham">Our beginnings</p>
+					</div>
 				</div>
 			</div>
-			<div>
-				<div class="row">
-					<div class="col-sm p-1 m-1">
-						<div class="card mx-auto w-75" >
-							<img src="images/pasta.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Penne Martiana</h5>
-								<p class="card-text">Taking inspiration from Penne Arrabiata, the Penne Martiana </p>
-								<button  class="btn btn-primary">$ 14.99</button>							
-							</div>
-						</div>
-					</div>
-					<div class="col-sm p-1 m-1">
-						<div class="card mx-auto w-75" >
-							<img src="images/burger.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Mark 16 Veg</h5>
-								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-								<button  class="btn btn-primary">$ 9.99</button>							
-							</div>
-						</div>
-					</div>
-					<div class="col-sm p-1 m-1">
-						<div class="card mx-auto w-75" >
-							<img src="images/burger2.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<h5 class="card-title">Extra Deluxe Space Rex</h5>
-								<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-								<button  class="btn btn-primary">$ 19.99</button>
-							</div>
-						</div>
-					</div>
-				</div>
+		</header>
+
+
+
+
+		<div class="container-fluid w-100 masthead bg1">
+			<div class="row  p-3 m-2">
+
+				<p class="text-white display-4 pt-2">A Brief History of Space and Us</p>
+				<p class="text-white pt-2 gotham">Started in 2054, when Elon Musk terraformed Mars and we all shifted to this planet, MarStoned rolled around, combining old and new recipes, infusing them with new herbs and spices grown both on Mars and Earth. 
+					Slowly, we grew bigger and bigger and have now conquered the top position in the food industry. 
+					Now we are reimagining the fast food game and bringing new, unthinkable orders to our redesigned menus. Enjoy the Penne Martianna with a hint of Iron Sauce. Treat your kids to a Mark to Veg combined with a Sub Zero Drink and end your family dinner with a brand new Chocolate Supernova made with our own brand new chocolate. 
+				So come, enjoy our hard work and leave back for your pod satisfied. And be sure to send a great review back to our friends on Earth too. Enjoy!</p>
+
 			</div>
 
 		</div>
-   
-    </body>
+		<div class="container-fluid w-100 masthead">
+			
+		</div>
+
+
+	</div>
+</header>
+</div>	
+
+
+</body>
 </html>

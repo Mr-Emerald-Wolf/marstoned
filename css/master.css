@@ -1,14 +1,21 @@
 body {
-	background-color: #000000;
+  background-color: #000000;
 }
+
 .masthead {
+  height: 100vh;
+  min-height: 500px;
+  }
+
+.mastheadImg {
 	height: 100vh;
 	min-height: 500px;
+  background-image: url("../images/nebula.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
+
 .serif {
   font-family: "Times New Roman", Times, serif;
 }
@@ -23,4 +30,39 @@ video {
   z-index: -1;
   object-position: center;
   object-fit: cover;
+}
+
+.fade {
+
+  opacity: 1;
+
+}
+.bg-black {
+  background-color: #000000;
+}
+#title {
+  font-family: Futura New,sans-serif;
+  font-size: 4.5em;
+  line-height: 1.08em;
+  letter-spacing: 6px;
+  font-weight: 100;
+}
+
+
+.gotham {
+  font-family: "Gotham", sans-serif, monospace;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 2.5px;
+}
+.bg1 {
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url('../images/marsbg.jpg');
+    width: 80%;
+    height: 50%;
+    background-size: cover;
+    color: white;
+    padding: 20px;
 }

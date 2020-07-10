@@ -1,0 +1,12 @@
+.bg {
+  background: url('../images/nebula.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.masthead {
+	height: 100vh;
+	min-height: 500px;
+
+}
