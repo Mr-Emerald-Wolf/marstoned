@@ -16,6 +16,7 @@ body {
 
 }
 
+
 .serif {
   font-family: "Times New Roman", Times, serif;
 }
@@ -65,4 +66,30 @@ video {
     background-size: cover;
     color: white;
     padding: 20px;
+}
+.bg2 {
+   background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url('../images/marsbg3.png');
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+
+}
+.masthead50 {
+  height: 50vh;
+  min-height: 250px;
+  }
+.gotham1 {
+  font-family: "Gotham", sans-serif, monospace;
+  font-weight: lighter;
+  color: #000;
+}
+.title {
+  font-family: Futura New,sans-serif;
+  line-height: 1.08em;
+  letter-spacing: 6px;
+  font-weight: lighter;
 }
